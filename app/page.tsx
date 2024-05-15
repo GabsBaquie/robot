@@ -1,5 +1,5 @@
 "use client";
-import { Robot } from "@/components/Robot";
+import { Robot } from "@/components/robot";
 import { Button } from "@/components/ui/button";
 import {
   Backdrop,
