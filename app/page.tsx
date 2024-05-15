@@ -1,5 +1,5 @@
 "use client";
-import { Robot } from "@/components/robot";
+import { Robot } from "@/components/robot.jsx";
 import { Button } from "@/components/ui/button";
 import {
   Backdrop,
