@@ -1,6 +1,7 @@
 "use client";
 import { Robot } from "@/components/Robot";
 import { Button } from "@/components/ui/button";
+import TypingAnimation from "@/components/ui/typing-animation";
 import {
   Backdrop,
   Environment,
@@ -32,7 +33,7 @@ export default function Home() {
 
       const hideTimer = setTimeout(() => {
         setShowScroll(false);
-      }, 2000); // Hide after 4 seconds
+      }, 4000); // Hide after 4 seconds
 
       return () => clearTimeout(hideTimer);
     });
@@ -99,10 +100,11 @@ export default function Home() {
           <Scroll></Scroll>
 
           <Scroll html style={{ width: "100%" }}>
-            <div className="absolute top-[42vh] inset-0 m-auto">
-              <h1 className="text-[#cdcbca] font-extrabold text-[13em] text-center bg-gradient-to-r from-blue-300 via-slate-400 to-blue-900 bg-clip-text text-transparent ">
-                PHANTOM
-              </h1>
+            <div className="absolute top-[45vh] inset-0 m-auto">
+              <TypingAnimation
+                className="text-[#cdcbca] font-extrabold text-[14em] text-center bg-gradient-to-r from-blue-300 via-slate-400 to-blue-900 bg-clip-text text-transparent tracking-widest"
+                text="ROBOT"
+              />
             </div>
             <div className="absolute top-[100vh] left-14 ">
               <h2 className="text-2xl font-bold">
